@@ -37,3 +37,67 @@
     transform: translateY(0px);
   }
 }
+.Main {
+  background-color: #2c3e50;
+  color: #fff;
+  font-family: 'MedievalSharp', cursive;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('../public/texture-wall2.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  
+}
+
+.Main h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.Main nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.Main a {
+  text-decoration: none;
+  background-color: #bdc3c7;
+  color: #2c3e50;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 1rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Main a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.Main a:hover {
+  background-color: #95a5a6;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.Main a:hover::before {
+  transform: translate(-50%, -50%) scale(15);
+  transition: all 0.5s ease-in-out;
+}
